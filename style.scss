@@ -1,0 +1,100 @@
+// SPACING SYSTEM (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+// FONT SIZE SYSTEM (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+$font-style: Rubik, sans-serif;
+$primary-color: #e67e22;
+$secondary-color: #fdf2e9;
+$text-color: #555;
+
+body {
+  font-family: $font-style;
+  line-height: 1;
+  font-weight: 400;
+  color: $text-color;
+}
+
+.section-hero {
+  background-color: $secondary-color;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 9.6rem 0;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: $text-color;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: $secondary-color;
+  color: $text-color;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
